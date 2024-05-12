@@ -1,0 +1,51 @@
+#root {
+text-align: center;
+margin: 0 auto;
+}
+
+.main{
+  max-width: 1500px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.input{
+  background-color: white;
+  border-radius: 5px;
+  margin: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards{
+  margin: 1rem;
+}
+
+.busqueda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 100px;
+}
