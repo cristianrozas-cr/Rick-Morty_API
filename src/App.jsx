@@ -16,18 +16,29 @@ function App() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Rick & Morty API</Navbar.Brand>
+          <Navbar.Brand href="#home">
+          <img
+              alt=""
+              src="./src/assets/pngwing.com.png"
+              width="80"
+              height="80"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
       <div className='main'>
-        <div className='busqueda'>
-          <h3>Busca tu personaje favorito: </h3>
-          <Buscador search={search} setSearch={setSearch}/>
+        <div className='container-busqueda'>
+          <div className='colores'>
+            <div className='busqueda'>
+              <h3>Busca tu personaje favorito: </h3>
+              <Buscador search={search} setSearch={setSearch}/>
+            </div>
+          </div>
         </div>
         <MiApi search={search}/>
       </div>

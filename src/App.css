@@ -23,6 +23,8 @@ margin: 0 auto;
   margin: 2rem;
   color: black;
   text-align: center;
+  border: none;
+  padding: 10px 0;
 }
 
 .cards-container{
@@ -35,11 +37,30 @@ margin: 0 auto;
   margin: 1rem;
 }
 
-.busqueda{
+.container-busqueda{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+.colores{
+  background-color: #3b7cff3f;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.busqueda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .busqueda{
+  flex-direction: row;
+  }
+}
+
 
 .footer{
   display: flex;
