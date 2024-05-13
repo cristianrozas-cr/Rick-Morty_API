@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import rickandmorty from "./assets/rickandmorty.png"
 
 function App() {
 
@@ -18,12 +19,13 @@ function App() {
         <Container>
           <Navbar.Brand href="#home">
           <img
-              alt=""
-              src="./src/assets/pngwing.com.png"
-              width="80"
-              height="80"
-              className="d-inline-block align-top"
-            />
+              alt="imagen"
+              src={rickandmorty}
+              width="100"
+              height="100"
+              className="d-inline-block m-2 me-4"
+            />{' '}
+            Rick & Morty API
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -42,7 +44,7 @@ function App() {
         </div>
         <MiApi search={search}/>
       </div>
-    <footer className='footer'>Derechos reservados</footer>
+    <footer className='footer'>Prueba React I - Desafío Latam</footer>
     </>
   )
 }
